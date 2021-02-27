@@ -1,18 +1,18 @@
 // let myHeading = document.querySelector('h1');
 // myHeading.textContent = 'Hello world!'; //JS注释
 
-// document.querySelector('body').onclick = function() {
-//     alert('别戳我，我怕疼。');
-// }
+document.querySelector('h1').onclick = function() {
+    alert('别戳我，疼。');
+}
 
 // 设置图片切换
 let myImage = document.querySelector('img');
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/lip.jpeg') {
+    if(mySrc === 'images/do.png') {
       myImage.setAttribute('src', 'images/pose.gif');
     } else {
-      myImage.setAttribute('src', 'images/lip.jpeg');
+      myImage.setAttribute('src', 'images/do.png');
     }
 }
 
